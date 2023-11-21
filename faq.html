@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koohii Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="jqueryuicss/jquery-ui.css">
+    <link rel="stylesheet" href="jqueryuicss/jquery-ui.structure.css">
+    <link rel="stylesheet" href="jqueryuicss/jquery-uitheme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="faq.js"></script>
+    <script src="tab.js"></script>
+    <link rel="icon" href="img/logo-icono.ico">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light bg-opacity-75">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="logo" width="200px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link link-style" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-style" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-style" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-style" href="faq.html">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+    <!-- fin NAV BAR -->
+<!-- Encabezado de la Página -->
+<div class="header-container">
+  <img src="img/logo-icono.ico" alt="Logo" class="header-logo">
+  <p class="header-description">Bienvenido a nuestro Centro de Ayuda. Encuentra respuestas a las preguntas más frecuentes.</p>
+</div>
+
+<!-- TAB -->
+<div id="tabs">
+  <ul>
+    <li><a href="#tabs-1">Tarde de cafe</a></li>
+    <li><a href="#tabs-2">Tardes de manga</a></li>
+    <li><a href="#tabs-3">Eventos</a></li>
+  </ul>
+  <div id="tabs-1">
+    <p><strong>Te invitamos a tomar la merienda con nosotros</strong></p>
+    <p>Podes venir a tomar el cafe solo o acompañado</p>
+  </div>
+  <div id="tabs-2">
+    <p><strong>Tardes de Manga</strong></p>
+    <p>Un lugar divertido y tranquilo donde puedas leer tus series favoritas</p>
+  </div>
+  <div id="tabs-3">
+    <p><strong>Eventos</strong></p>
+    <p>Proximamente</p>
+  </div>
+</div>
+
+<!-- FAQ -->
+<div class="container mt-5">
+  <h2 class="text-center mb-4">Preguntas Frecuentes</h2>
+
+  <!-- Pregunta y Respuesta 1 -->
+  <div class="mb-3">
+    <div class="faq-question">
+      <i class="fas fa-question-circle"></i> ¿Cual es la especialidad de la casa?
+    </div>
+    <div class="faq-answer">
+      <p>Nuestros cafes suelen tener algo personalizado que el barista improvisa en el momento, por eso decimos que cada café es único.</p>
+      <img src="img/cafe1.png" alt="Imagen 1">
+    </div>
+  </div>
+
+  <!-- Pregunta y Respuesta 2 -->
+  <div class="mb-3">
+    <div class="faq-question">
+      <i class="fas fa-question-circle"></i> ¿Hay un minimo de compra para poder leer manga?
+    </div>
+    <div class="faq-answer">
+      <p>No hay un minimo de compra, solo comprando cualquier bebida caliente o fria podes acceder a la libreria de Koohii..</p>
+    </div>
+  </div>
+
+  <!-- 3 -->
+    <!-- Pregunta y Respuesta 3 -->
+    <div class="mb-3">
+      <div class="faq-question">
+        <i class="fas fa-question-circle"></i> ¿Puedo comprarles productos?
+      </div>
+      <div class="faq-answer">
+        <p>No hay un minimo de compra, solo comprando cualquier bebida caliente o fria podes acceder a la libreria de Koohii.</p>
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <!-- Pregunta y Respuesta 4 -->
+    <div class="mb-3">
+      <div class="faq-question">
+        <i class="fas fa-question-circle"></i> ¿Qué ocurre con los mangas deteriorados?
+      </div>
+      <div class="faq-answer">
+        <p>Si adquiriste una merienda compuesta por bebida + postre y llegará a manchar o romper algún manga, no te preocupes porque el gasto estaría cubierto. Este manga lo quitaríamos de la biblioteca y lo venderíamos con un descuento segun el grado de que tan defectuoso se encuentre el mismo. No lo vendemos a la misma persona que lo entrego para evitar estafas, nuestro modo de proceder es almacenar los defectuosos cada cierto tiempo y lanzarlos aletoriamente en la tienda online.</p>
+      </div>
+    </div>
+
+     <!-- 5 -->
+    <!-- Pregunta y Respuesta 5 -->
+    <div class="mb-3">
+      <div class="faq-question">
+        <i class="fas fa-question-circle"></i> ¿Puedo ir para sociabilizar?
+      </div>
+      <div class="faq-answer">
+        <p>Siempre que desees tomar un café con nosotros podrás hacerlo. Poseemos en la mesa unas cartas distintivas para llevar a tu mesa en caso de que quieras compartir el tiempo con otros amantes del anime, sientete a gusto de tomar una cuando lo desees o unirte a alguien que ya la tenga.</p>
+      </div>
+    </div>
+
+      <!-- 6 -->
+    <!-- Pregunta y Respuesta 6 -->
+    <div class="mb-3">
+      <div class="faq-question">
+        <i class="fas fa-question-circle"></i> ¿Puedo ir acompañado de alguien a quien no le guste el anime?
+      </div>
+      <div class="faq-answer">
+        <p>Si, por supuesto. Poseemos en la mesa unas cartas distintivas para llevar a tu mesa en caso de que quieras compartir el tiempo con otros amantes del anime, por lo que si no lo llevas a tu mesa nadie te molestará a ti ni a tu acompañante.</p>
+      </div>
+    </div>
+</div>
+ <!-- Footer -->
+ <footer class="text-center text-lg-start bg-light bg-opacity-75 text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"></section>
+
+  <!-- Section: Links  -->
+  <section class="">
+   <div class="container text-center text-md-start mt-5">
+       <!-- Grid row -->
+       <div class="row mt-3">
+           <!-- Grid column -->
+           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+               <!-- Content -->
+               <h6 class="text-uppercase fw-bold mb-4" style="color: #8B4513;">
+                   <i class="fas fa-gem me-3 text-secondary"></i>Koohii Store
+               </h6>
+               <p><i class="bi bi-geo-alt-fill"></i> <a href="https://www.google.com/maps?q=-34.61418860718553, -58.4281477046413" target="_blank">Av. Rivadavia 4423</a></p>
+              
+                   <i class="bi bi-envelope-at-fill"></i>
+                   <a href="mailto:contacto@koohiistore.com">contacto@koohiistore.com</a>
+               </p>
+           </div>
+           <!-- Grid column -->
+           <!-- Grid column -->
+           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+               <!-- Links -->
+               <img src="img/logo.png" alt="logo" width="200px">
+               <a href="sobrenosotros.html">Sobre Nosotros</a>
+           </div>
+           <!-- Grid column -->
+
+           <!-- Grid column -->
+           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+               <!-- Links -->
+               <h6 class="text-uppercase fw-bold mb-4" style="color: #8B4513;">Medios de pago</h6>
+               <img src="img/visa.png" alt="visa" width="35px">
+               <img src="img/master.png" alt="master" width="35px">
+               <img src="img/efectivo.png" alt="efectivo" width="30px">
+               <img src="img/transferencia-bancaria.png" alt="transferencia" width="30px">
+           </div>
+           <!-- Grid column -->
+       </div>
+       <!-- Grid row -->
+   </div>
+</section>
+
+
+<!-- Section: Links  -->
+
+<!-- Copyright -->
+
+<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+<div class="social-icons">
+<a href="https://www.facebook.com/home.php" target="_blank" class="me-3 text-brown"><i class="bi bi-facebook"></i></a>
+<a href="https://twitter.com/" target="_blank" class="me-3 text-brown"><i class="bi bi-twitter"></i></a>
+<a href="https://www.instagram.com/" target="_blank" class="me-3 text-brown"><i class="bi bi-instagram"></i></a>
+</div>
+
+
+© Erika Helfenstern Desarrollo y Programacion ll, 2B 2023
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+</body>
+</html>

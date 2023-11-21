@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koohii Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="productos.js"></script>
+    <link rel="icon" href="img/logo-icono.ico">
+</head>
+<body>
+  
+    <div class="container-fluid">
+      <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg navbar-light bg-light bg-opacity-75">
+              <a class="navbar-brand" href="index.html">
+                  <img src="img/logo.png" alt="logo" width="200px">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                          <a class="nav-link link-style" href="galeria.html">Galeria</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link link-style" href="productos.html">Productos</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link link-style" href="contacto.html">Contacto</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link link-style" href="faq.html">FAQ</a>
+                      </li>
+                  </ul>
+              </div>
+          </nav>
+      </div>
+  </div>
+    <!-- fin NAV BAR -->
+
+      <!-- SLIDER -->
+    <div class="container-fluid">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="img/Banner1.png" class="d-block w-100" alt="banner">
+              </div>
+              <div class="carousel-item">
+                <img src="img/Banner2.png" class="d-block w-100" alt="banner">
+              </div>
+              <div class="carousel-item">
+                <img src="img/Banner3.png" class="d-block w-100" alt="banner">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- FIN SLIDER -->
+    <!-- PRODUCTOS-->
+    <div class="container-fluid my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <a href="productos.html" class="figure-link">
+              <figure>
+                <p style="font-weight: bold; color: #8B4513; font-size: 20px;">Café Tradicional</p>
+                <img src="img/cafe1.png" width="250px" height="250px" class="rounded-circle border border-2" alt="cafe">
+              </figure>
+            </a>
+          </div>
+          <div class="col text-center">
+            <a href="productos.html" class="figure-link">
+              <figure>
+                <p style="font-weight: bold; color: #8B4513; font-size: 20px;">Café Temático</p>
+
+
+
+                <img src="img/cafe2.png" width="250px" height="250px" class="rounded-circle border border-2" alt="cafe">
+              </figure>
+            </a>
+          </div>
+          <div class="col text-center">
+            <a href="productos.html" class="figure-link">
+              <figure>
+                <p style="font-weight: bold; color: #8B4513; font-size: 20px;">Café & Manga</p>
+                <img src="img/cafe3.png" width="250px" height="250px" class="rounded-circle border border-2" alt="cafe">
+              </figure>
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- fin PRODUCTOS -->
+    <!-- CARDS -->
+    <div class="container-fluid">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-center product-cards">
+          <div class="card mx-4 cartas" style="width: 18rem;">
+            <img src="img/cafe2.png" class="card-img-top" alt="tienda de café">
+            <div class="card-body">
+              <h5 class="card-title">Productos destacados</h5>
+              <p class="card-text">Todos los productos de Koohii a la venta.</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="productos.html" class="btn btn-primary">Catálogo</a>
+            </div>
+          </div>
+          <div class="card mx-4 cartas" style="width: 18rem;">
+            <img src="img/cafe3.png" class="card-img-top" alt="tienda de café">
+            <div class="card-body">
+              <h5 class="card-title">Fotos destacadas</h5>
+              <p class="card-text">Fotos de koohiistore.</p>
+            </div>
+            <div class="card-footer text-center">
+              <a href="galeria.html" class="btn btn-primary">Galeria</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    
+    
+     <!-- fin CARDS -->
+     <div class="container-fluid">
+      <div class="container">
+        <div class="row">
+          <div class="testimonial-section d-flex p-2 flex-column">
+            <h2 class="testimonial-title my-5">Testimonios</h2>
+            <div class="d-flex flex-wrap">
+              <div class="testimonial-card p-2 col-lg-4 col-md-6 col-sm-12 text-center">
+                <p class="testimonial-name medium-font">Juan</p>
+                <img src="img/hombre128.png" alt="testimonio">
+                <p>Me gusta porque tienen muy buenos baristas, me encantan todas las variedades de café que tienen para ofrecer</p>
+              </div>
+              <div class="testimonial-card p-2 col-lg-4 col-md-6 col-sm-12 text-center">
+                <p class="testimonial-name medium-font">Maria</p>
+                <img src="img/mujer128.png" alt="testimonio">
+                <p>Es un ambiente muy tranquilo, me encanta el café y sus postres, además me gusta mucho la decoración</p>
+              </div>
+              <div class="testimonial-card p-2 col-lg-4 col-md-12 col-sm-12 text-center">
+                <p class="testimonial-name medium-font">Carlitos</p>
+                <img src="img/kid128.png" alt="testimonio">
+                <p>Me gusta venir acá porque puedo leer todos los mangas que mi mamá no me quiere comprar</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- MOCKUP -->
+    <div class="container-fluid px-5 py-4 mb-5" style="background-color: #c7b299">
+      <div class="container">
+          <div class="row">
+              <div class="col-2">
+                  <p class="main-message">Descubrí un nuevo modo de merendar</p>
+              </div>
+              <div class="col-5 text-center">
+                  <img src="img/panda.png" class="img-fluid" alt="foto">
+              </div>
+              <div class="col-5">
+                  <p>Una merienda que se queda grabada en tu alma, suscribite para conocer todas las novedades que tenemos para vos, enterate de eventos, descuentos y mucho más!</p>
+              </div>
+          </div>
+      </div>
+  </div>
+  
+   
+    <!-- NEWSLETTER Y RRSS -->
+    <div class="container-fluid px-5 py-4">
+      <div class="container">
+          <div class="row">
+              <div class="col-3 fs-20 text-brown">
+                  Recibí nuestras noticias
+              </div>
+              <div class="col-6 d-flex justify-content-center">
+                  <div class="input-group mb-3">
+                      <input type="text" class="form-control" placeholder="Ingresa tu email" aria-label="Recipient's username" aria-describedby="button-addon2">
+                      <button class="btn btn-outline-secondary" type="button" id="button-addon2"><i class="bi bi-envelope"></i></button>
+                  </div>
+              </div>
+              <div class="col-3 social-media">
+                  <a href="https://www.facebook.com/home.php" target="_blank" class="me-3 text-brown"><i class="bi bi-facebook"></i></a>
+                  <a href="https://twitter.com/" target="_blank" class="me-3 text-brown"><i class="bi bi-twitter"></i></a>
+                  <a href="https://www.instagram.com/" target="_blank" class="me-3 text-brown"><i class="bi bi-instagram"></i></a>
+              </div>
+          </div>
+      </div>
+  </div>
+         <!-- Footer -->
+         <footer class="text-center text-lg-start bg-light bg-opacity-75 text-muted">
+             <!-- Section: Social media -->
+             <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"></section>
+     
+             <!-- Section: Links  -->
+             <section class="">
+              <div class="container text-center text-md-start mt-5">
+                  <!-- Grid row -->
+                  <div class="row mt-3">
+                      <!-- Grid column -->
+                      <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                          <!-- Content -->
+                          <h6 class="text-uppercase fw-bold mb-4" style="color: #8B4513;">
+                              <i class="fas fa-gem me-3 text-secondary"></i>Koohii Store
+                          </h6>
+                          <p><i class="bi bi-geo-alt-fill"></i> <a href="https://www.google.com/maps?q=-34.61418860718553, -58.4281477046413" target="_blank">Av. Rivadavia 4423</a></p>
+                         
+                              <i class="bi bi-envelope-at-fill"></i>
+                              <a href="mailto:contacto@koohiistore.com">contacto@koohiistore.com</a>
+                          </p>
+                      </div>
+                      <!-- Grid column -->
+                      <!-- Grid column -->
+                      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                          <!-- Links -->
+                          <img src="img/logo.png" alt="logo" width="200px">
+                          <a href="sobrenosotros.html">Sobre Nosotros</a>
+                      </div>
+                      <!-- Grid column -->
+          
+                      <!-- Grid column -->
+                      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                          <!-- Links -->
+                          <h6 class="text-uppercase fw-bold mb-4" style="color: #8B4513;">Medios de pago</h6>
+                          <img src="img/visa.png" alt="visa" width="35px">
+                          <img src="img/master.png" alt="master" width="35px">
+                          <img src="img/efectivo.png" alt="efectivo" width="30px">
+                          <img src="img/transferencia-bancaria.png" alt="transferencia" width="30px">
+                      </div>
+                      <!-- Grid column -->
+                  </div>
+                  <!-- Grid row -->
+              </div>
+          </section>
+          
+     
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+      <div class="social-icons">
+          <a href="https://www.facebook.com/home.php" target="_blank" class="me-3 text-brown"><i class="bi bi-facebook"></i></a>
+          <a href="https://twitter.com/" target="_blank" class="me-3 text-brown"><i class="bi bi-twitter"></i></a>
+          <a href="https://www.instagram.com/" target="_blank" class="me-3 text-brown"><i class="bi bi-instagram"></i></a>
+      </div>
+  
+  
+      © Erika Helfenstern Desarrollo y Programacion ll, 2B 2023
+        </div>
+    <!-- Copyright -->
+  </footer>
+  <!-- Footer -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+</body>
+</html>

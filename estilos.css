@@ -1,0 +1,221 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Merriweather', serif;
+  font-weight: 700; 
+  color: #333; 
+}
+
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400; 
+  color: #555; 
+}
+
+
+body {
+  background-color: #e0d2b7;
+  color: #333; 
+}
+
+.cartas{
+    background-color:#ece6d9;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+.product-cards .card img {
+    height: 280px;
+}
+
+.product-cards .card .card-footer {
+    border: none;
+}
+
+.product-cards .card .card-body {
+    font-size: 14px;
+}
+
+.social-media .bi {
+    font-size: 28px;
+    margin: 2px;
+}
+
+.input-group {
+    max-height: 40px;
+}
+
+
+  @media (max-width: 576px) {
+    .d-flex.flex-column > div {
+      order: 0 !important; 
+    }
+  }
+
+  @media (min-width: 577px) and (max-width: 768px) {
+    .d-flex.flex-column > div {
+      order: 0 !important;
+    }
+  }
+
+  @media (min-width: 769px) {
+    .d-flex.flex-column > div {
+      order: 1; 
+    }
+  }
+
+
+  .faq-question {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    margin-bottom: 10px;
+  }
+
+  .faq-answer {
+    display: none;
+    padding: 15px;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .faq-question i {
+    margin-right: 10px;
+    color: #007bff;
+  }
+
+  .faq-answer img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 10px;
+  }
+
+  /* Estilos para el encabezado */
+  .header-container {
+    text-align: center;
+    margin: 30px 0;
+  }
+
+  .header-logo {
+    max-width: 100px;
+    height: auto;
+  }
+
+  .header-description {
+    font-size: 18px;
+    color: #6c757d;
+  }
+
+  #carrito-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  a {
+    color: inherit; 
+    text-decoration: none; 
+  }
+  
+  .btn {
+    background-color: #ccc;
+    color: #555;
+    font-weight: bold;
+    border: none;
+    transition: background-color 0.3s;
+  }
+  
+  .btn:hover {
+    background-color: #999; 
+  }
+  
+  
+  .btn:focus,
+  .btn:active {
+    background-color: #999;
+  }
+  
+  figure {
+    background-color: #ece6d9; 
+    padding: 10px; 
+    transition: background-color 0.3s, box-shadow 0.3s; 
+  }
+  
+  figure:hover {
+    background-color: #d4c1a5; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+  }
+  
+  
+  figure p {
+    margin-bottom: 0; 
+  }
+  
+  .btn-primary {
+    transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+  }
+
+  .btn-primary:hover {
+    background-color: #8B4513;
+    border-color: #8B4513;
+    color: #FFFFFF;
+  }
+
+  .testimonial-section {
+    text-align: center;
+    padding: 20px;
+  }
+
+  .testimonial-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+
+  .testimonial-card {
+    margin-bottom: 20px;
+  }
+
+  .testimonial-name {
+    font-size: 1.2em;
+  }
+  .medium-font {
+    font-weight: 500; 
+  }
+
+  .main-message {
+    font-size: 1.5em; 
+    font-weight: medium; 
+    color: #1a1a1a; 
+  }
+  .text-brown {
+    color: #8b4513a1; 
+}
+
+
+.link-style {
+    color: #8B4513; 
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease; 
+}
+
+.link-style:hover {
+    color: #CD853F; 
+}
+.text-brown {
+    color: #8B4513; 
+}

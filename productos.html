@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Koohii Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="productos.js"></script>
+    <link rel="icon" href="img/logo-icono.ico">
+</head>
+
+
+<body>
+  <div class="container-fluid">
+    <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light bg-opacity-75">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.png" alt="logo" width="200px">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link link-style" href="galeria.html">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-style" href="productos.html">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-style" href="contacto.html">Contacto</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link link-style" href="faq.html">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</div>
+    <!-- fin NAV BAR -->
+
+
+  <!-- Sección de Productos con Carrito -->
+  <section class="container mt-5">
+    <!-- Título del Carrito y Precio Total -->
+    <div id="carrito-header">
+      <h2><i class="fas fa-shopping-cart"></i> Carrito de Compras</h2>
+      <p>Total: <span id="totalCarrito">$0</span></p>
+    </div>
+
+    <!-- Galería de Productos -->
+    <div id="galeriaProductos" class="row">
+      <!-- Producto 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="img/vaso1.png" class="card-img-top img-fluid" alt="Producto 1">
+          <div class="card-body">
+            <h5 class="card-title">Vaso térmico modelo chica</h5>
+            <p class="card-text">Precio: $2000</p>
+            <button class="btn btn-primary btn-agregar" data-nombre="Producto 1" data-precio="2000">Agregar al Carrito</button>
+            <button class="btn btn-danger btn-quitar" data-nombre="Producto 1" data-precio="2000">Quitar del Carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="img/vaso2.png" class="card-img-top img-fluid" alt="Producto 2">
+          <div class="card-body">
+            <h5 class="card-title">Vaso térmico modelo grande</h5>
+            <p class="card-text">Precio: $3000</p>
+            <button class="btn btn-primary btn-agregar" data-nombre="Producto 2" data-precio="3000">Agregar al Carrito</button>
+            <button class="btn btn-danger btn-quitar" data-nombre="Producto 2" data-precio="3000">Quitar del Carrito</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Producto 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="img/vaso3.png" class="card-img-top img-fluid" alt="Producto 3">
+          <div class="card-body">
+            <h5 class="card-title">Taza cerámica</h5>
+            <p class="card-text">Precio: $1500</p>
+            <button class="btn btn-primary btn-agregar" data-nombre="Producto 3" data-precio="1500">Agregar al Carrito</button>
+            <button class="btn btn-danger btn-quitar" data-nombre="Producto 3" data-precio="1500">Quitar del Carrito</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Carrito de Compras -->
+    <div id="carrito" class="mt-4">
+      <ul id="listaCarrito" class="list-group">
+        <!-- Los productos se agregarán aquí dinámicamente con jQuery -->
+      </ul>
+    </div>
+  </section>
+
+  <!-- Agrega la referencia a jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Agrega tu script JavaScript -->
+  <script src="ruta/a/tu-script.js"></script>
+<!-- Enlace-->
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+
+<!-- Menú de Pedidos -->
+<div class="container mt-5">
+  <h2>La Carta</h2>
+  <ul class="list-group">
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Café Americano
+      <span class="badge bg-primary rounded-pill">$1000</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Cafe con leche
+      <span class="badge bg-primary rounded-pill">$1300</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Latte Vainilla/Chocolate/Caramelo
+      <span class="badge bg-primary rounded-pill">$1600</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Frappé Especial
+      <span class="badge bg-primary rounded-pill">$1600</span>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Café animé
+        <span class="badge bg-primary rounded-pill">$1800</span>
+    </li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
+      Espuma adicional
+      <span class="badge bg-primary rounded-pill">$150</span>
+  </li>
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    Porción de Torta
+    <span class="badge bg-primary rounded-pill">$3000</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-center">
+  Medialuna
+  <span class="badge bg-primary rounded-pill">$800</span>
+</li>
+<li class="list-group-item d-flex justify-content-between align-items-center">
+  Brownie
+  <span class="badge bg-primary rounded-pill">$2500</span>
+</li>
+  </ul>
+</div>
+ <!-- Footer -->
+ <footer class="text-center text-lg-start bg-light bg-opacity-75 text-muted">
+  <!-- Section: Social media -->
+  <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom"></section>
+
+  <!-- Section: Links  -->
+  <section class="">
+   <div class="container text-center text-md-start mt-5">
+       <!-- Grid row -->
+       <div class="row mt-3">
+           <!-- Grid column -->
+           <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+               <!-- Content -->
+               <h6 class="text-uppercase fw-bold mb-4" style="color: #8B4513;">
+                   <i class="fas fa-gem me-3 text-secondary"></i>Koohii Store
+               </h6>
+               <p><i class="bi bi-geo-alt-fill"></i> <a href="https://www.google.com/maps?q=-34.61418860718553, -58.4281477046413" target="_blank">Av. Rivadavia 4423</a></p>
+              
+                   <i class="bi bi-envelope-at-fill"></i>
+                   <a href="mailto:contacto@koohiistore.com">contacto@koohiistore.com</a>
+               
+           </div>
+           <!-- Grid column -->
+           <!-- Grid column -->
+           <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+               <!-- Links -->
+               <img src="img/logo.png" alt="logo" width="200px">
+               <a href="sobrenosotros.html">Sobre Nosotros</a>
+           </div>
+           <!-- Grid column -->
+
+           <!-- Grid column -->
+           <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+               <!-- Links -->
+               <h6 class="text-uppercase fw-bold mb-4" style="color: #8B4513;">Medios de pago</h6>
+               <img src="img/visa.png" alt="visa" width="35px">
+               <img src="img/master.png" alt="master" width="35px">
+               <img src="img/efectivo.png" alt="efectivo" width="30px">
+               <img src="img/transferencia-bancaria.png" alt="transferencia" width="30px">
+           </div>
+           <!-- Grid column -->
+       </div>
+       <!-- Grid row -->
+   </div>
+</section>
+
+
+<!-- Section: Links  -->
+
+<!-- Copyright -->
+
+<div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.025);">
+<div class="social-icons">
+<a href="https://www.facebook.com/home.php" target="_blank" class="me-3 text-brown"><i class="bi bi-facebook"></i></a>
+<a href="https://twitter.com/" target="_blank" class="me-3 text-brown"><i class="bi bi-twitter"></i></a>
+<a href="https://www.instagram.com/" target="_blank" class="me-3 text-brown"><i class="bi bi-instagram"></i></a>
+</div>
+
+
+© Erika Helfenstern Desarrollo y Programacion ll, 2B 2023
+</div>
+<!-- Copyright -->
+</footer>
+<!-- Footer -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+
+</body>
+</html>
