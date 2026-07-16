@@ -1,35 +1,56 @@
-# ☕ Kohii – Maquetado Web
+# ☕ KooHii – Café Temático Anime
 
-Diseño web estático realizado como ejercicio de maquetado responsivo, basado en una guía de estilo desarrollada para el proyecto **Kohii**.
+Sitio web de una cafetería temática de anime, con diseño kawaii, paleta cálida en tonos naranja/marrón y modo claro.
 
-🔗 [Ver guía completa en Behance](https://www.behance.net/gallery/185230561/Kohii-Maquetado-Web)
+🔗 [Ver guía original en Behance](https://www.behance.net/gallery/185230561/Kohii-Maquetado-Web)
 
 ---
 
-## 🎨 Herramientas utilizadas
+## 📖 Historia del proyecto
 
-- Generador de imágenes por IA
-- Adobe Illustrator (diseño de elementos gráficos)
-- Figma (referencia de diseño UI)
-- Visual Studio Code (edición de código)
+El sitio original fue creado en **2023** como proyecto de la facultad, donde hice el maquetado básico con HTML, CSS, Bootstrap y jQuery. Lo dejé **invarios errores y sin terminar.
+
+Años después lo agarré de nuevo, lo modifiqué por completo: le saqué Bootstrap y jQuery, lo reescribí con HTML y CSS puro, le agregué un diseño kawaii con panda como marca, modo claro con paleta naranja/marrón, y varias interacciones con JavaScript vanilla.
+
+---
+
+## 🎨 Herramientas
+
+- Visual Studio Code
 - HTML5 + CSS3 puro
-- Bootstrap (estructura responsive)
-- jQuery (interacciones simples)
+- JavaScript vanilla (sin librerías)
+- Imágenes de Unsplash y StockCake
 
 ---
 
 ## 📁 Estructura
 
-- `index.html`: Página principal basada en la guía visual.
-- `style.css`: Estilos personalizados del proyecto.
-- `/assets`: Imágenes y recursos gráficos generados.
-- `README.md`: Este archivo ✍️
+```
+├── index.html        # Página principal
+├── Productos.html    # Menú de bebidas, snacks y merch
+├── galeria.html      # Galería de fotos con lightbox
+├── faq.html          # Preguntas frecuentes (acordeón)
+├── styles.css        # Estilos del sitio
+├── app.js            # Interacciones (scroll, quotes, lightbox, etc.)
+├── cart.js           # Carrito de compras con localStorage
+└── img/              # Imágenes y favicon
+```
 
 ---
 
-## 💡 Notas
+## ✨ Características
 
-- El objetivo fue reproducir la identidad visual de Kohii respetando tipografías, paleta de colores y disposición general desde la referencia de Behance.
-- Se utilizaron componentes de Bootstrap adaptados manualmente para alinearse con el diseño original.
+- Paleta cálida: crema, naranja y marrón
+- Logo y favicon de panda kawaii 🐼
+- Efectos hover con corazones y sparkles
+- Galería con lightbox (navegación con teclado)
+- Carrito de compras funcional con localStorage
+- Acordeón de preguntas frecuentes
+- Frases rotativas en el hero
+- Totalmente responsive
 
 ---
+
+## 🚀 Cómo usar
+
+Abrí `index.html` en tu navegador. No necesita servidor — funciona con archivos estáticos.
