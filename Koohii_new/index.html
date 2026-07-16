@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KooHii - Café para Otakus</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/panda-favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+
+  <header id="main-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🐼</span>
+        <span class="logo-text">KOOHII</span>
+      </a>
+
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html" class="active">Inicio</a></li>
+          <li><a href="Productos.html">Menú</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-extras">
+        <a href="Productos.html" class="cart-btn icon-btn" id="cartBtn">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-count" id="cartCount"></span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <span class="hero-panda">🐼</span>
+      <span class="hero-panda">🐼</span>
+      <span class="hero-panda">🐼</span>
+      <div class="hero-content">
+        <span class="hero-badge">Café Temático Anime</span>
+        <h1>
+          Tu rincón <span class="gradient-text">otaku</span><br>
+          donde el café se encuentra con el <span class="gradient-text">anime</span>
+        </h1>
+        <p class="hero-subtitle">
+          Disfrutá de café de especialidad mientras explorás tu mundo favorito.
+        </p>
+        <div class="hero-buttons">
+          <a href="Productos.html" class="btn btn-primary">
+            <i class="fas fa-mug-hot"></i> Ver el Menú
+          </a>
+          <a href="galeria.html" class="btn btn-outline">
+            <i class="fas fa-images"></i> Galería
+          </a>
+        </div>
+        <div class="hero-quote">
+          <p id="heroQuote">El mejor lugar para tomar café y charlar de anime.</p>
+          <span class="quote-author" id="quoteAuthor">- Equipo KooHii</span>
+        </div>
+
+        <div class="anime-deco">
+          <span class="shuriken">✦</span>
+          <span class="sparkle">✧</span>
+          <span class="shuriken">✦</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section>
+      <div class="section-header reveal">
+        <span class="section-panda">🐼</span>
+        <h2>¿Por qué KooHii?</h2>
+        <p>Más que un café, una experiencia</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal">
+          <div class="feature-icon">☕</div>
+          <h3>Café de Especialidad</h3>
+          <p>Granos seleccionados de origen único, tostados artesanalmente para cada preparación.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🎌</div>
+          <h3>Decoración Anime</h3>
+          <p>Figuras, posters y ambientación que te transportan a tu serie favorita.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">🎮</div>
+          <h3>Zona Gaming</h3>
+          <p>Consolas retro y PC gaming para que disfrutes mientras esperás tu bebida.</p>
+        </div>
+        <div class="feature-card reveal">
+          <div class="feature-icon">📖</div>
+          <h3>Manga Library</h3>
+          <p>Biblioteca de manga para leer mientras tomás café. ¡Traemos los volúmenes más recientes!</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- MENU HIGHLIGHTS -->
+    <section>
+      <div class="section-header reveal">
+        <span class="section-panda">🐼</span>
+        <h2>La Carta</h2>
+        <p>Nuestras bebidas y snack más pedidos</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="menu-grid reveal">
+        <div class="menu-item">
+          <span class="menu-item-name"><span class="menu-item-emoji">☕</span> Café Americano</span>
+          <span class="menu-item-price">$1.000</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name"><span class="menu-item-emoji">🥛</span> Café con Leche</span>
+          <span class="menu-item-price">$1.300</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name"><span class="menu-item-emoji">🍫</span> Latte Vainilla/Choco</span>
+          <span class="menu-item-price">$1.600</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name"><span class="menu-item-emoji">🧊</span> Frappé Especial</span>
+          <span class="menu-item-price">$1.600</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name"><span class="menu-item-emoji">🌸</span> Café Animé</span>
+          <span class="menu-item-price">$1.800</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name"><span class="menu-item-emoji">🍰</span> Porción de Torta</span>
+          <span class="menu-item-price">$3.000</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name"><span class="menu-item-emoji">🥐</span> Medialuna</span>
+          <span class="menu-item-price">$800</span>
+        </div>
+        <div class="menu-item">
+          <span class="menu-item-name"><span class="menu-item-emoji">🟫</span> Brownie</span>
+          <span class="menu-item-price">$2.500</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section>
+      <div class="section-header reveal">
+        <span class="section-panda">🐼</span>
+        <h2>Lo que dicen nuestros clientes</h2>
+        <p>Opiniones de la comunidad</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal">
+          <p>"El mejor café temático que encontré. La ambientación es increíble y el Café Animé es adictivo."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">🧑‍🎨</div>
+            <div class="testimonial-author-info">
+              <strong>Sakura_Luna</strong>
+              <span>Cliente frecuente</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <p>"Me encanta poder leer manga mientras espero mi pedido. ¡La zona gaming es un plus enorme!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">🐾</div>
+            <div class="testimonial-author-info">
+              <strong>Tanjiro_Kun</strong>
+              <span>Cliente frecuente</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal">
+          <p>"Las vasijas temáticas son hermosas. Compré la taza de Ghibli y la uso todos los días."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">🐉</div>
+            <div class="testimonial-author-info">
+              <strong>GokuFan99</strong>
+              <span>Cliente frecuente</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section>
+      <div class="newsletter reveal">
+        <h2>Suscribite al Newsletter</h2>
+        <p>Enterate de los nuevos sabores, eventos y promociones antes que nadie</p>
+        <form class="newsletter-form" id="newsletterForm">
+          <input type="email" placeholder="tu@email.com" required>
+          <button type="submit"><i class="fas fa-paper-plane"></i> Suscribirme</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>🐼 KooHii</h4>
+        <p>Café de especialidad para la comunidad otaku. Donde el buen café se encuentra con tus historias favoritas.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Menú</h4>
+        <a href="Productos.html">Bebidas</a>
+        <a href="Productos.html">Snacks</a>
+        <a href="Productos.html">Vasijas</a>
+        <a href="galeria.html">Galería</a>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <a href="faq.html">Preguntas Frecuentes</a>
+        <a href="#">Términos</a>
+        <a href="#">Privacidad</a>
+      </div>
+      <div class="footer-col">
+        <h4>Redes</h4>
+        <div class="footer-socials">
+          <a href="#" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" title="TikTok"><i class="fab fa-tiktok"></i></a>
+          <a href="#" title="Discord"><i class="fab fa-discord"></i></a>
+          <a href="#" title="Twitter"><i class="fab fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-panda">🐼</div>
+      <p>&copy; 2025 KooHii. Todos los derechos reservados. Hecho con ♥ y mucho café.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" title="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>

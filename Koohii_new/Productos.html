@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menú - KooHii</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/panda-favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+
+  <header id="main-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🐼</span>
+        <span class="logo-text">KOOHII</span>
+      </a>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Productos.html" class="active">Menú</a></li>
+          <li><a href="galeria.html">Galería</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="nav-extras">
+        <a href="Productos.html" class="cart-btn icon-btn" id="cartBtn">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-count" id="cartCount"></span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- BEBIDAS -->
+    <section>
+      <div class="section-header reveal">
+        <h2>Bebidas</h2>
+        <p>Café, frappes y más para calmar tu cravings</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="products-grid">
+
+        <div class="product-card reveal" data-name="Café Americano" data-price="1000">
+          <img src="https://images.unsplash.com/photo-1509042239860-f550ce710b93?w=400&h=250&fit=crop" class="product-card-img" alt="Café Americano">
+          <div class="product-card-body">
+            <h3>Café Americano</h3>
+            <p class="desc">El clásico americano, intenso y directo. Como una batalla de shonen.</p>
+            <span class="price">$1.000</span>
+            <button class="btn-add-cart"><i class="fas fa-plus"></i> Agregar</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-name="Café con Leche" data-price="1300">
+          <img src="https://images.unsplash.com/photo-1461023058943-07fcbe16d735?w=400&h=250&fit=crop" class="product-card-img" alt="Café con Leche">
+          <div class="product-card-body">
+            <h3>Café con Leche</h3>
+            <p class="desc">Suave y cremoso. Perfecto para un episodio más.</p>
+            <span class="price">$1.300</span>
+            <button class="btn-add-cart"><i class="fas fa-plus"></i> Agregar</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-name="Latte Vainilla/Choco" data-price="1600">
+          <img src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=400&h=250&fit=crop" class="product-card-img" alt="Latte Especial">
+          <div class="product-card-body">
+            <h3>Latte Vainilla / Choco</h3>
+            <p class="desc">Elegí tu camino: vainilla dulce o chocolate intenso. Ambos son level max.</p>
+            <span class="price">$1.600</span>
+            <button class="btn-add-cart"><i class="fas fa-plus"></i> Agregar</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-name="Frappé Especial" data-price="1600">
+          <img src="https://images.unsplash.com/photo-1517701604599-bb29b565090c?w=400&h=250&fit=crop" class="product-card-img" alt="Frappé Especial">
+          <div class="product-card-body">
+            <h3>Frappé Especial</h3>
+            <p class="desc">Helado, cremoso y con toppings. El power-up que necesitás.</p>
+            <span class="price">$1.600</span>
+            <button class="btn-add-cart"><i class="fas fa-plus"></i> Agregar</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-name="Café Animé" data-price="1800">
+          <img src="https://images.stockcake.com/public/7/d/8/7d8cf149-97c5-4c92-a52a-b29bde673743_large/anime-latte-art-stockcake.jpg" class="product-card-img" alt="Café Animé">
+          <div class="product-card-body">
+            <h3>Café Animé</h3>
+            <p class="desc">Nuestra signature: café con espuma y arte latte temático. ¡Cada taza es única!</p>
+            <span class="price">$1.800</span>
+            <button class="btn-add-cart"><i class="fas fa-plus"></i> Agregar</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-name="Espuma Adicional" data-price="150">
+          <img src="https://images.unsplash.com/photo-1572442388796-11668a67e53d?w=400&h=250&fit=crop" class="product-card-img" alt="Espuma Adicional">
+          <div class="product-card-body">
+            <h3>Espuma Adicional</h3>
+            <p class="desc">Extra de espuma para tu bebida. Porque más espuma = más levels.</p>
+            <span class="price">$150</span>
+            <button class="btn-add-cart"><i class="fas fa-plus"></i> Agregar</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SNACKS -->
+    <section>
+      <div class="section-header reveal">
+        <h2>Snacks & Postres</h2>
+        <p>Para acompañar tu café</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="products-grid">
+
+        <div class="product-card reveal" data-name="Porción de Torta" data-price="3000">
+          <img src="https://images.unsplash.com/photo-1565958011703-44f9829ba187?w=400&h=250&fit=crop" class="product-card-img" alt="Porción de Torta">
+          <div class="product-card-body">
+            <h3>Porción de Torta</h3>
+            <p class="desc">Torta del día con ingredientes frescos. Sabor level: SSR.</p>
+            <span class="price">$3.000</span>
+            <button class="btn-add-cart"><i class="fas fa-plus"></i> Agregar</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-name="Medialuna" data-price="800">
+          <img src="https://images.unsplash.com/photo-1530610476181-d83430b64dcd?w=400&h=250&fit=crop" class="product-card-img" alt="Medialuna">
+          <div class="product-card-body">
+            <h3>Medialuna</h3>
+            <p class="desc">Recién horneada, crocante por fuera y suave por dentro.</p>
+            <span class="price">$800</span>
+            <button class="btn-add-cart"><i class="fas fa-plus"></i> Agregar</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-name="Brownie" data-price="2500">
+          <img src="https://images.unsplash.com/photo-1606313564200-e75d5e30476c?w=400&h=250&fit=crop" class="product-card-img" alt="Brownie">
+          <div class="product-card-body">
+            <h3>Brownie</h3>
+            <p class="desc">Chocolate intenso con nueces. Críticos lo llaman "obra maestra".</p>
+            <span class="price">$2.500</span>
+            <button class="btn-add-cart"><i class="fas fa-plus"></i> Agregar</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- VASIJAS -->
+    <section>
+      <div class="section-header reveal">
+        <h2>Vasijas & Merch</h2>
+        <p>Llevá la experiencia KooHii a tu casa</p>
+        <div class="section-divider"></div>
+      </div>
+      <div class="products-grid">
+
+        <div class="product-card reveal" data-name="Vaso Térmico Chica" data-price="2000">
+          <img src="img/vaso1.png" class="product-card-img" alt="Vaso Térmico Chica">
+          <div class="product-card-body">
+            <h3>Vaso Térmico Chica</h3>
+            <p class="desc">Diseño exclusivo KooHii. Mantiene tu café caliente por horas.</p>
+            <span class="price">$2.000</span>
+            <button class="btn-add-cart"><i class="fas fa-plus"></i> Agregar</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-name="Vaso Térmico Grande" data-price="3000">
+          <img src="img/vaso2.png" class="product-card-img" alt="Vaso Térmico Grande">
+          <div class="product-card-body">
+            <h3>Vaso Térmico Grande</h3>
+            <p class="desc">Edición grande para las sesiones de anime largas.</p>
+            <span class="price">$3.000</span>
+            <button class="btn-add-cart"><i class="fas fa-plus"></i> Agregar</button>
+          </div>
+        </div>
+
+        <div class="product-card reveal" data-name="Taza Cerámica" data-price="1500">
+          <img src="img/vaso3.png" class="product-card-img" alt="Taza Cerámica">
+          <div class="product-card-body">
+            <h3>Taza Cerámica</h3>
+            <p class="desc">Arte exclusivo inspirado en tus series favoritas.</p>
+            <span class="price">$1.500</span>
+            <button class="btn-add-cart"><i class="fas fa-plus"></i> Agregar</button>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- CART SIDEBAR -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3><i class="fas fa-shopping-bag"></i> Tu Pedido</h3>
+      <button class="cart-close" id="cartClose"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <span class="empty-icon">🛒</span>
+        <p>Tu carrito está vacío</p>
+      </div>
+    </div>
+    <div class="cart-footer">
+      <div class="cart-total">
+        <span>Total</span>
+        <span class="total-price" id="cartTotal">$0</span>
+      </div>
+      <button class="btn-checkout" id="btnCheckout">
+        <i class="fas fa-credit-card"></i> Finalizar Pedido
+      </button>
+    </div>
+  </aside>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>KooHii ☕</h4>
+        <p>Café de especialidad para la comunidad otaku.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Menú</h4>
+        <a href="Productos.html">Bebidas</a>
+        <a href="Productos.html">Snacks</a>
+        <a href="Productos.html">Vasijas</a>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <a href="faq.html">Preguntas Frecuentes</a>
+      </div>
+      <div class="footer-col">
+        <h4>Redes</h4>
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-discord"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 KooHii. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" title="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="cart.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

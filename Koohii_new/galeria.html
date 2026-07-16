@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galería - KooHii</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="img/panda-favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+
+  <header id="main-header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">🐼</span>
+        <span class="logo-text">KOOHII</span>
+      </a>
+      <nav id="main-nav">
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="Productos.html">Menú</a></li>
+          <li><a href="galeria.html" class="active">Galería</a></li>
+          <li><a href="faq.html">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="nav-extras">
+        <a href="Productos.html" class="cart-btn icon-btn" id="cartBtn">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="cart-count" id="cartCount"></span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menú">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <section>
+      <div class="section-header reveal">
+        <h2>Galería KooHii</h2>
+        <p>Momentos capturados en nuestro café temático. ¡Hacé click para ver en grande!</p>
+        <div class="section-divider"></div>
+      </div>
+
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item reveal" data-src="img/foto1.png">
+          <img src="img/foto1.png" alt="Interior del café">
+          <div class="gallery-item-overlay">
+            <p>Interior del local - Zona principal</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-src="img/foto2.png">
+          <img src="img/foto2.png" alt="Café temático">
+          <div class="gallery-item-overlay">
+            <p>Café con arte latte personalizado</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-src="img/foto3.png">
+          <img src="img/foto3.png" alt="Zona relax">
+          <div class="gallery-item-overlay">
+            <p>Zona relax - Para leer manga</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-src="img/mostrador.png">
+          <img src="img/mostrador.png" alt="Mostrador">
+          <div class="gallery-item-overlay">
+            <p>Nuestro mostrador de productos</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-src="img/cafe-tradicional.jpg">
+          <img src="img/cafe-tradicional.jpg" alt="Café tradicional">
+          <div class="gallery-item-overlay">
+            <p>Café tradicional japonés</p>
+          </div>
+        </div>
+        <div class="gallery-item reveal" data-src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=800&h=600&fit=crop">
+          <img src="https://images.unsplash.com/photo-1564349683136-77e08dba1ef7?w=400&h=300&fit=crop" alt="Nuestro panda mascot">
+          <div class="gallery-item-overlay">
+            <p>🐼 Nuestro mascot: Pandacchi</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- LIGHTBOX -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose"><i class="fas fa-times"></i></button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev"><i class="fas fa-chevron-left"></i></button>
+    <img src="" alt="Galería" id="lightboxImg">
+    <button class="lightbox-nav lightbox-next" id="lightboxNext"><i class="fas fa-chevron-right"></i></button>
+  </div>
+
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-col">
+        <h4>KooHii ☕</h4>
+        <p>Café de especialidad para la comunidad otaku.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Menú</h4>
+        <a href="Productos.html">Bebidas</a>
+        <a href="Productos.html">Snacks</a>
+      </div>
+      <div class="footer-col">
+        <h4>Info</h4>
+        <a href="faq.html">Preguntas Frecuentes</a>
+      </div>
+      <div class="footer-col">
+        <h4>Redes</h4>
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-tiktok"></i></a>
+          <a href="#"><i class="fab fa-discord"></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 KooHii. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" title="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <div class="toast-container" id="toastContainer"></div>
+
+  <script src="app.js"></script>
+</body>
+</html>
